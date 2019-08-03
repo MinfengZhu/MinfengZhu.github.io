@@ -11,17 +11,17 @@
   </url>
   
   <url>
-    <loc>https://MinfengZhu.github.io/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://MinfengZhu.github.io/authors/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://MinfengZhu.github.io/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://MinfengZhu.github.io/</loc>
     <priority>0</priority>
   </url>
   
