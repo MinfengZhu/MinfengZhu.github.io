@@ -3,6 +3,259 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://MinfengZhu.github.io/publication_types/1/</loc>
+    <lastmod>2019-04-02T15:46:02+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://MinfengZhu.github.io/authors/</loc>
+    <lastmod>2019-04-02T15:46:02+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://MinfengZhu.github.io/publication/dm-gan/</loc>
+    <lastmod>2019-04-02T15:46:02+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://MinfengZhu.github.io/tags/generative-adversarial-networks/</loc>
+    <lastmod>2019-04-02T15:46:02+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://MinfengZhu.github.io/authors/minfeng-zhu/</loc>
+    <lastmod>2019-04-02T15:46:02+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://MinfengZhu.github.io/</loc>
+    <lastmod>2019-04-02T15:46:02+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://MinfengZhu.github.io/authors/pingbo-pan/</loc>
+    <lastmod>2019-04-02T15:46:02+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://MinfengZhu.github.io/publication_types/</loc>
+    <lastmod>2019-04-02T15:46:02+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://MinfengZhu.github.io/publication/</loc>
+    <lastmod>2019-04-02T15:46:02+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://MinfengZhu.github.io/tags/</loc>
+    <lastmod>2019-04-02T15:46:02+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://MinfengZhu.github.io/tags/text-to-image-synthesis/</loc>
+    <lastmod>2019-04-02T15:46:02+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://MinfengZhu.github.io/authors/wei-chen/</loc>
+    <lastmod>2019-04-02T15:46:02+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://MinfengZhu.github.io/authors/and-yi-yang./</loc>
+    <lastmod>2019-04-02T15:46:02+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://MinfengZhu.github.io/publication_types/2/</loc>
+    <lastmod>2019-03-11T17:20:04+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://MinfengZhu.github.io/tags/human-mobility/</loc>
+    <lastmod>2019-03-11T17:20:04+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://MinfengZhu.github.io/authors/jiazhi-xia/</loc>
+    <lastmod>2019-03-11T17:20:04+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://MinfengZhu.github.io/authors/liangjun-liu/</loc>
+    <lastmod>2019-03-11T17:20:04+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://MinfengZhu.github.io/authors/yankong-zhang/</loc>
+    <lastmod>2019-03-11T17:20:04+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://MinfengZhu.github.io/authors/yuetong-luo/</loc>
+    <lastmod>2019-03-11T17:20:04+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://MinfengZhu.github.io/authors/yuxin-ma/</loc>
+    <lastmod>2019-03-11T17:20:04+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://MinfengZhu.github.io/authors/zhaosong-huang/</loc>
+    <lastmod>2019-03-11T17:20:04+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://MinfengZhu.github.io/publication/location2vec/</loc>
+    <lastmod>2019-03-11T17:20:04+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://MinfengZhu.github.io/tags/spatio-temporal-data/</loc>
+    <lastmod>2019-03-11T17:20:04+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://MinfengZhu.github.io/tags/urban-computing/</loc>
+    <lastmod>2019-03-11T17:20:04+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://MinfengZhu.github.io/tags/visual-exploration/</loc>
+    <lastmod>2019-03-11T17:20:04+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://MinfengZhu.github.io/tags/word-embedding/</loc>
+    <lastmod>2019-03-11T17:20:04+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://MinfengZhu.github.io/authors/feiran-wu/</loc>
+    <lastmod>2018-11-02T15:46:02+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://MinfengZhu.github.io/tags/heterogeneous/</loc>
+    <lastmod>2018-11-02T15:46:02+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://MinfengZhu.github.io/authors/huihua-guan/</loc>
+    <lastmod>2018-11-02T15:46:02+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://MinfengZhu.github.io/tags/spatio-temporal/</loc>
+    <lastmod>2018-11-02T15:46:02+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://MinfengZhu.github.io/tags/urban-data/</loc>
+    <lastmod>2018-11-02T15:46:02+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://MinfengZhu.github.io/publication/vaud/</loc>
+    <lastmod>2018-11-02T15:46:02+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://MinfengZhu.github.io/tags/visual-analysis/</loc>
+    <lastmod>2018-11-02T15:46:02+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://MinfengZhu.github.io/tags/visual-reasoning/</loc>
+    <lastmod>2018-11-02T15:46:02+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://MinfengZhu.github.io/authors/and-ross-maciejewski./</loc>
+    <lastmod>2018-11-02T15:46:02+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://MinfengZhu.github.io/tags/mobility/</loc>
+    <lastmod>2018-08-02T15:46:02+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://MinfengZhu.github.io/tags/mobility-patterns/</loc>
+    <lastmod>2018-08-02T15:46:02+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://MinfengZhu.github.io/tags/mobility-transition/</loc>
+    <lastmod>2018-08-02T15:46:02+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://MinfengZhu.github.io/authors/ross-maciejewski/</loc>
+    <lastmod>2018-08-02T15:46:02+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://MinfengZhu.github.io/publication/amtg/</loc>
+    <lastmod>2018-08-02T15:46:02+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://MinfengZhu.github.io/authors/tianlong-gu/</loc>
+    <lastmod>2018-08-02T15:46:02+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://MinfengZhu.github.io/tags/timeline/</loc>
+    <lastmod>2018-08-02T15:46:02+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://MinfengZhu.github.io/authors/and-liang-chang./</loc>
+    <lastmod>2018-08-02T15:46:02+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://MinfengZhu.github.io/authors/admin/</loc>
   </url>
   
@@ -11,17 +264,7 @@
   </url>
   
   <url>
-    <loc>https://MinfengZhu.github.io/authors/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://MinfengZhu.github.io/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://MinfengZhu.github.io/</loc>
     <priority>0</priority>
   </url>
   
@@ -30,21 +273,7 @@
   </url>
   
   <url>
-    <loc>https://MinfengZhu.github.io/publication_types/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://MinfengZhu.github.io/publication/</loc>
-  </url>
-  
-  <url>
     <loc>https://MinfengZhu.github.io/talk/</loc>
-  </url>
-  
-  <url>
-    <loc>https://MinfengZhu.github.io/tags/</loc>
-    <priority>0</priority>
   </url>
   
 </urlset>

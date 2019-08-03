@@ -5,12 +5,44 @@
     <link>https://MinfengZhu.github.io/publication/</link>
       <atom:link href="https://MinfengZhu.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 02 Apr 2019 15:46:02 +0800</lastBuildDate>
     <image>
       <url>https://MinfengZhu.github.io/img/icon-192.png</url>
       <title>Publications</title>
       <link>https://MinfengZhu.github.io/publication/</link>
     </image>
+    
+    <item>
+      <title>DM-GAN: Dynamic Memory Generative Adversarial Networks for Text-to-Image Synthesis.</title>
+      <link>https://MinfengZhu.github.io/publication/dm-gan/</link>
+      <pubDate>Tue, 02 Apr 2019 15:46:02 +0800</pubDate>
+      <guid>https://MinfengZhu.github.io/publication/dm-gan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>location2vec: a situation-aware representation for visual exploration of urban locations</title>
+      <link>https://MinfengZhu.github.io/publication/location2vec/</link>
+      <pubDate>Mon, 11 Mar 2019 17:20:04 +0800</pubDate>
+      <guid>https://MinfengZhu.github.io/publication/location2vec/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VAUD: A visual analysis approach for exploring spatio-temporal urban data.</title>
+      <link>https://MinfengZhu.github.io/publication/vaud/</link>
+      <pubDate>Fri, 02 Nov 2018 15:46:02 +0800</pubDate>
+      <guid>https://MinfengZhu.github.io/publication/vaud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Structuring Mobility Transition With an Adaptive Graph Representation.</title>
+      <link>https://MinfengZhu.github.io/publication/amtg/</link>
+      <pubDate>Thu, 02 Aug 2018 15:46:02 +0800</pubDate>
+      <guid>https://MinfengZhu.github.io/publication/amtg/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

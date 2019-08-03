@@ -5,12 +5,140 @@
     <link>https://MinfengZhu.github.io/tags/</link>
       <atom:link href="https://MinfengZhu.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 02 Apr 2019 15:46:02 +0800</lastBuildDate>
     <image>
       <url>https://MinfengZhu.github.io/img/icon-192.png</url>
       <title>Tags</title>
       <link>https://MinfengZhu.github.io/tags/</link>
     </image>
+    
+    <item>
+      <title>Generative Adversarial Networks</title>
+      <link>https://MinfengZhu.github.io/tags/generative-adversarial-networks/</link>
+      <pubDate>Tue, 02 Apr 2019 15:46:02 +0800</pubDate>
+      <guid>https://MinfengZhu.github.io/tags/generative-adversarial-networks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Text-to-Image Synthesis</title>
+      <link>https://MinfengZhu.github.io/tags/text-to-image-synthesis/</link>
+      <pubDate>Tue, 02 Apr 2019 15:46:02 +0800</pubDate>
+      <guid>https://MinfengZhu.github.io/tags/text-to-image-synthesis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Human mobility</title>
+      <link>https://MinfengZhu.github.io/tags/human-mobility/</link>
+      <pubDate>Mon, 11 Mar 2019 17:20:04 +0800</pubDate>
+      <guid>https://MinfengZhu.github.io/tags/human-mobility/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>spatio-temporal data</title>
+      <link>https://MinfengZhu.github.io/tags/spatio-temporal-data/</link>
+      <pubDate>Mon, 11 Mar 2019 17:20:04 +0800</pubDate>
+      <guid>https://MinfengZhu.github.io/tags/spatio-temporal-data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>urban computing</title>
+      <link>https://MinfengZhu.github.io/tags/urban-computing/</link>
+      <pubDate>Mon, 11 Mar 2019 17:20:04 +0800</pubDate>
+      <guid>https://MinfengZhu.github.io/tags/urban-computing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>visual exploration</title>
+      <link>https://MinfengZhu.github.io/tags/visual-exploration/</link>
+      <pubDate>Mon, 11 Mar 2019 17:20:04 +0800</pubDate>
+      <guid>https://MinfengZhu.github.io/tags/visual-exploration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>word embedding</title>
+      <link>https://MinfengZhu.github.io/tags/word-embedding/</link>
+      <pubDate>Mon, 11 Mar 2019 17:20:04 +0800</pubDate>
+      <guid>https://MinfengZhu.github.io/tags/word-embedding/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Heterogeneous</title>
+      <link>https://MinfengZhu.github.io/tags/heterogeneous/</link>
+      <pubDate>Fri, 02 Nov 2018 15:46:02 +0800</pubDate>
+      <guid>https://MinfengZhu.github.io/tags/heterogeneous/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spatio-temporal</title>
+      <link>https://MinfengZhu.github.io/tags/spatio-temporal/</link>
+      <pubDate>Fri, 02 Nov 2018 15:46:02 +0800</pubDate>
+      <guid>https://MinfengZhu.github.io/tags/spatio-temporal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Urban data</title>
+      <link>https://MinfengZhu.github.io/tags/urban-data/</link>
+      <pubDate>Fri, 02 Nov 2018 15:46:02 +0800</pubDate>
+      <guid>https://MinfengZhu.github.io/tags/urban-data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Visual Analysis</title>
+      <link>https://MinfengZhu.github.io/tags/visual-analysis/</link>
+      <pubDate>Fri, 02 Nov 2018 15:46:02 +0800</pubDate>
+      <guid>https://MinfengZhu.github.io/tags/visual-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Visual Reasoning</title>
+      <link>https://MinfengZhu.github.io/tags/visual-reasoning/</link>
+      <pubDate>Fri, 02 Nov 2018 15:46:02 +0800</pubDate>
+      <guid>https://MinfengZhu.github.io/tags/visual-reasoning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mobility</title>
+      <link>https://MinfengZhu.github.io/tags/mobility/</link>
+      <pubDate>Thu, 02 Aug 2018 15:46:02 +0800</pubDate>
+      <guid>https://MinfengZhu.github.io/tags/mobility/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mobility Patterns</title>
+      <link>https://MinfengZhu.github.io/tags/mobility-patterns/</link>
+      <pubDate>Thu, 02 Aug 2018 15:46:02 +0800</pubDate>
+      <guid>https://MinfengZhu.github.io/tags/mobility-patterns/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mobility Transition</title>
+      <link>https://MinfengZhu.github.io/tags/mobility-transition/</link>
+      <pubDate>Thu, 02 Aug 2018 15:46:02 +0800</pubDate>
+      <guid>https://MinfengZhu.github.io/tags/mobility-transition/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Timeline</title>
+      <link>https://MinfengZhu.github.io/tags/timeline/</link>
+      <pubDate>Thu, 02 Aug 2018 15:46:02 +0800</pubDate>
+      <guid>https://MinfengZhu.github.io/tags/timeline/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
