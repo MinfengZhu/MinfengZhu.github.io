@@ -28,10 +28,10 @@
   
     
   
-  <meta name="description" content="Understanding the relationship between urban locations is an essential task in urban planning and transportation management. Whereas prior works have focused on studying urban locations by aggregating location-based properties, our scheme preserves the mutual influence between urban locations and mobility behavior, and thereby enables situation-aware exploration of urban regions. By leveraging word embedding techniques, we encode urban locations with a vectorized representation while retaining situational awareness. Specifically, we design a spatial embedding algorithm that is precomputed by incorporating the interactions between urban locations and moving objects. To explore our proposed technique, we have designed and implemented a web-based visual exploration system that supports the comprehensive analysis of human mobility, location functionality, and traffic assessment by leveraging the proposed visual representation. Case studies demonstrate the effectiveness of our approach.">
+  <meta name="description" content="This work focuses on the extremely low-light image enhancement, which aims to improve image brightness and reveal hidden information in darken areas. Recently, image enhancement approaches have yielded impressive progress. However, existing methods still suffer from three main problems: (1) low-light images usually are high-contrast. Existing methods may fail to recover images details in extremely dark or bright areas; (2) current methods cannot precisely correct the color of low-light images; (3) when the object edges are unclear, the pixel-wise loss may treat pixels of different objects equally and produce blurry images. In this paper, we propose a two-stage method called Edge-Enhanced Multi-Exposure Fusion Network (EEMEFN) to enhance extremely low-light images. In the first stage, we employ a multi-exposure fusion module to address the high contrast and color bias issues. We synthesize a set of images with different exposure time from a single image and construct an accurate normal-light image by combining well-exposed areas under different illumination conditions. Thus, it can produce realistic initial images with correct color from extremely noisy and low-light images. Secondly, we introduce an edge enhancement module to refine the initial images with the help of the edge information. Therefore, our method can reconstruct high-quality images with sharp edges when minimizing the pixel-wise loss. Experiments on the See-in-the-Dark dataset indicate that our EEMEFN approach achieves state-of-the-art performance.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://MinfengZhu.github.io/publication/location2vec/">
+  <link rel="alternate" hreflang="en-us" href="https://MinfengZhu.github.io/publication/eemefn/">
 
   
 
@@ -110,7 +110,7 @@
   <link rel="icon" type="image/png" href="/img/icon-32.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://MinfengZhu.github.io/publication/location2vec/">
+  <link rel="canonical" href="https://MinfengZhu.github.io/publication/eemefn/">
 
   
   
@@ -123,15 +123,15 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Minfeng Zhu">
-  <meta property="og:url" content="https://MinfengZhu.github.io/publication/location2vec/">
-  <meta property="og:title" content="location2vec: a situation-aware representation for visual exploration of urban locations | Minfeng Zhu">
-  <meta property="og:description" content="Understanding the relationship between urban locations is an essential task in urban planning and transportation management. Whereas prior works have focused on studying urban locations by aggregating location-based properties, our scheme preserves the mutual influence between urban locations and mobility behavior, and thereby enables situation-aware exploration of urban regions. By leveraging word embedding techniques, we encode urban locations with a vectorized representation while retaining situational awareness. Specifically, we design a spatial embedding algorithm that is precomputed by incorporating the interactions between urban locations and moving objects. To explore our proposed technique, we have designed and implemented a web-based visual exploration system that supports the comprehensive analysis of human mobility, location functionality, and traffic assessment by leveraging the proposed visual representation. Case studies demonstrate the effectiveness of our approach."><meta property="og:image" content="https://MinfengZhu.github.io/img/icon-192.png">
+  <meta property="og:url" content="https://MinfengZhu.github.io/publication/eemefn/">
+  <meta property="og:title" content="EEMEFN: Low-Light Image Enhancement via Edge-Enhanced Multi-Exposure Fusion Network | Minfeng Zhu">
+  <meta property="og:description" content="This work focuses on the extremely low-light image enhancement, which aims to improve image brightness and reveal hidden information in darken areas. Recently, image enhancement approaches have yielded impressive progress. However, existing methods still suffer from three main problems: (1) low-light images usually are high-contrast. Existing methods may fail to recover images details in extremely dark or bright areas; (2) current methods cannot precisely correct the color of low-light images; (3) when the object edges are unclear, the pixel-wise loss may treat pixels of different objects equally and produce blurry images. In this paper, we propose a two-stage method called Edge-Enhanced Multi-Exposure Fusion Network (EEMEFN) to enhance extremely low-light images. In the first stage, we employ a multi-exposure fusion module to address the high contrast and color bias issues. We synthesize a set of images with different exposure time from a single image and construct an accurate normal-light image by combining well-exposed areas under different illumination conditions. Thus, it can produce realistic initial images with correct color from extremely noisy and low-light images. Secondly, we introduce an edge enhancement module to refine the initial images with the help of the edge information. Therefore, our method can reconstruct high-quality images with sharp edges when minimizing the pixel-wise loss. Experiments on the See-in-the-Dark dataset indicate that our EEMEFN approach achieves state-of-the-art performance."><meta property="og:image" content="https://MinfengZhu.github.io/img/icon-192.png">
   <meta property="twitter:image" content="https://MinfengZhu.github.io/img/icon-192.png"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="2019-03-11T17:20:04&#43;08:00">
+      <meta property="article:published_time" content="2020-04-02T15:46:02&#43;08:00">
     
-    <meta property="article:modified_time" content="2019-03-11T17:20:04&#43;08:00">
+    <meta property="article:modified_time" content="2020-04-02T15:46:02&#43;08:00">
   
 
   
@@ -143,7 +143,7 @@
 
 
 
-  <title>location2vec: a situation-aware representation for visual exploration of urban locations | Minfeng Zhu</title>
+  <title>EEMEFN: Low-Light Image Enhancement via Edge-Enhanced Multi-Exposure Fusion Network | Minfeng Zhu</title>
 
 </head>
 
@@ -391,7 +391,7 @@
   
   
 <div class="article-container pt-3">
-  <h1 itemprop="name">location2vec: a situation-aware representation for visual exploration of urban locations</h1>
+  <h1 itemprop="name">EEMEFN: Low-Light Image Enhancement via Edge-Enhanced Multi-Exposure Fusion Network</h1>
 
   
 
@@ -400,8 +400,8 @@
 
 
 
-<meta content="2019-03-11 17:20:04 &#43;0800 CST" itemprop="datePublished">
-<meta content="2019-03-11 17:20:04 &#43;0800 CST" itemprop="dateModified">
+<meta content="2020-04-02 15:46:02 &#43;0800 CST" itemprop="datePublished">
+<meta content="2020-04-02 15:46:02 &#43;0800 CST" itemprop="dateModified">
 
 <div class="article-metadata">
 
@@ -414,7 +414,7 @@
 
 
 
-  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/minfeng-zhu/">Minfeng Zhu</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/wei-chen/">Wei Chen</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/jiazhi-xia/">Jiazhi Xia</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/yuxin-ma/">Yuxin Ma</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/yankong-zhang/">Yankong Zhang</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/yuetong-luo/">Yuetong Luo</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/zhaosong-huang/">Zhaosong Huang</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/liangjun-liu/">Liangjun Liu</a></span>
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/minfeng-zhu/">Minfeng Zhu</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/pingbo-pan/">Pingbo Pan</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/wei-chen/">Wei Chen</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/and-yi-yang./">and Yi Yang.</a></span>
 
   </div>
   
@@ -426,7 +426,7 @@
     
       
     
-    <time>March 2019</time>
+    <time>April 2020</time>
   </span>
   
 
@@ -454,7 +454,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://MinfengZhu.github.io/publication/location2vec/&amp;text=location2vec:%20a%20situation-aware%20representation%20for%20visual%20exploration%20of%20urban%20locations" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://MinfengZhu.github.io/publication/eemefn/&amp;text=EEMEFN:%20Low-Light%20Image%20Enhancement%20via%20Edge-Enhanced%20Multi-Exposure%20Fusion%20Network" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -467,7 +467,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://MinfengZhu.github.io/publication/location2vec/&amp;t=location2vec:%20a%20situation-aware%20representation%20for%20visual%20exploration%20of%20urban%20locations" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://MinfengZhu.github.io/publication/eemefn/&amp;t=EEMEFN:%20Low-Light%20Image%20Enhancement%20via%20Edge-Enhanced%20Multi-Exposure%20Fusion%20Network" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook-f"></i>
         </a>
       </li>
@@ -480,7 +480,7 @@
       
       
       <li>
-        <a href="mailto:?subject=location2vec:%20a%20situation-aware%20representation%20for%20visual%20exploration%20of%20urban%20locations&amp;body=https://MinfengZhu.github.io/publication/location2vec/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=EEMEFN:%20Low-Light%20Image%20Enhancement%20via%20Edge-Enhanced%20Multi-Exposure%20Fusion%20Network&amp;body=https://MinfengZhu.github.io/publication/eemefn/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -493,7 +493,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://MinfengZhu.github.io/publication/location2vec/&amp;title=location2vec:%20a%20situation-aware%20representation%20for%20visual%20exploration%20of%20urban%20locations" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://MinfengZhu.github.io/publication/eemefn/&amp;title=EEMEFN:%20Low-Light%20Image%20Enhancement%20via%20Edge-Enhanced%20Multi-Exposure%20Fusion%20Network" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -506,7 +506,7 @@
       
       
       <li>
-        <a href="https://web.whatsapp.com/send?text=location2vec:%20a%20situation-aware%20representation%20for%20visual%20exploration%20of%20urban%20locations%20https://MinfengZhu.github.io/publication/location2vec/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="https://web.whatsapp.com/send?text=EEMEFN:%20Low-Light%20Image%20Enhancement%20via%20Edge-Enhanced%20Multi-Exposure%20Fusion%20Network%20https://MinfengZhu.github.io/publication/eemefn/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -519,7 +519,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://MinfengZhu.github.io/publication/location2vec/&amp;title=location2vec:%20a%20situation-aware%20representation%20for%20visual%20exploration%20of%20urban%20locations" target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://MinfengZhu.github.io/publication/eemefn/&amp;title=EEMEFN:%20Low-Light%20Image%20Enhancement%20via%20Edge-Enhanced%20Multi-Exposure%20Fusion%20Network" target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -565,14 +565,14 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1" href="http://www.cad.zju.edu.cn/home/vagblog/VAG_Work/Location2Vec_ITS_FINAL.pdf" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary my-1 mr-1" href="https://www.aaai.org/Papers/AAAI/2020GB/AAAI-ZhuM.2559.pdf" target="_blank" rel="noopener">
   PDF
 </a>
 
 
 
 <button type="button" class="btn btn-outline-primary my-1 mr-1 js-cite-modal"
-        data-filename="/publication/location2vec/cite.bib">
+        data-filename="/publication/eemefn/cite.bib">
   Cite
 </button>
 
@@ -602,7 +602,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract" itemprop="text">Understanding the relationship between urban locations is an essential task in urban planning and transportation management. Whereas prior works have focused on studying urban locations by aggregating location-based properties, our scheme preserves the mutual influence between urban locations and mobility behavior, and thereby enables situation-aware exploration of urban regions. By leveraging word embedding techniques, we encode urban locations with a vectorized representation while retaining situational awareness. Specifically, we design a spatial embedding algorithm that is precomputed by incorporating the interactions between urban locations and moving objects. To explore our proposed technique, we have designed and implemented a web-based visual exploration system that supports the comprehensive analysis of human mobility, location functionality, and traffic assessment by leveraging the proposed visual representation. Case studies demonstrate the effectiveness of our approach.</p>
+    <p class="pub-abstract" itemprop="text">This work focuses on the extremely low-light image enhancement, which aims to improve image brightness and reveal hidden information in darken areas. Recently, image enhancement approaches have yielded impressive progress. However, existing methods still suffer from three main problems: (1) low-light images usually are high-contrast. Existing methods may fail to recover images details in extremely dark or bright areas; (2) current methods cannot precisely correct the color of low-light images; (3) when the object edges are unclear, the pixel-wise loss may treat pixels of different objects equally and produce blurry images. In this paper, we propose a two-stage method called Edge-Enhanced Multi-Exposure Fusion Network (EEMEFN) to enhance extremely low-light images. In the first stage, we employ a multi-exposure fusion module to address the high contrast and color bias issues. We synthesize a set of images with different exposure time from a single image and construct an accurate normal-light image by combining well-exposed areas under different illumination conditions. Thus, it can produce realistic initial images with correct color from extremely noisy and low-light images. Secondly, we introduce an edge enhancement module to refine the initial images with the help of the edge information. Therefore, our method can reconstruct high-quality images with sharp edges when minimizing the pixel-wise loss. Experiments on the See-in-the-Dark dataset indicate that our EEMEFN approach achieves state-of-the-art performance.</p>
     
 
     
@@ -614,8 +614,8 @@
           <div class="col-12 col-md-9">
             
             
-            <a href="/publication/#2">
-              Journal article
+            <a href="/publication/#1">
+              Conference paper
             </a>
             
           </div>
@@ -632,7 +632,7 @@
       <div class="col-md-10">
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9">IEEE Transactions on Intelligent Transportation Systems</div>
+          <div class="col-12 col-md-9">Association for the Advancement of Artificial Intelligence</div>
         </div>
       </div>
       <div class="col-md-1"></div>
@@ -648,15 +648,7 @@
 
 <div class="article-tags">
   
-  <a class="badge badge-light" href="/tags/human-mobility/">Human mobility</a>
-  
-  <a class="badge badge-light" href="/tags/word-embedding/">word embedding</a>
-  
-  <a class="badge badge-light" href="/tags/urban-computing/">urban computing</a>
-  
-  <a class="badge badge-light" href="/tags/spatio-temporal-data/">spatio-temporal data</a>
-  
-  <a class="badge badge-light" href="/tags/visual-exploration/">visual exploration</a>
+  <a class="badge badge-light" href="/tags/low-light-image-enhancement/">Low-light Image Enhancement</a>
   
 </div>
 
