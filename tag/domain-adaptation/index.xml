@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Domain Adaptation | Minfeng Zhu</title>
+    <link>https://minfengzhu.github.io/tag/domain-adaptation/</link>
+      <atom:link href="https://minfengzhu.github.io/tag/domain-adaptation/index.xml" rel="self" type="application/rss+xml" />
+    <description>Domain Adaptation</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 01 Jul 2021 17:20:04 +0800</lastBuildDate>
+    <image>
+      <url>https://minfengzhu.github.io/media/icon_hubcc6da888a29c8354be6ce60e7e29f30_403445_512x512_fill_lanczos_center_3.png</url>
+      <title>Domain Adaptation</title>
+      <link>https://minfengzhu.github.io/tag/domain-adaptation/</link>
+    </image>
+    
+    <item>
+      <title>location2vec: a situation-aware representation for visual exploration of urban locations</title>
+      <link>https://minfengzhu.github.io/publication/kd3a/</link>
+      <pubDate>Thu, 01 Jul 2021 17:20:04 +0800</pubDate>
+      <guid>https://minfengzhu.github.io/publication/kd3a/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

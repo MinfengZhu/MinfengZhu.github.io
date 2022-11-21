@@ -5,12 +5,36 @@
     <link>https://minfengzhu.github.io/publication-type/2/</link>
       <atom:link href="https://minfengzhu.github.io/publication-type/2/index.xml" rel="self" type="application/rss+xml" />
     <description>2</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 11 Mar 2019 17:20:04 +0800</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 07 Feb 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://minfengzhu.github.io/media/icon_hubcc6da888a29c8354be6ce60e7e29f30_403445_512x512_fill_lanczos_center_3.png</url>
       <title>2</title>
       <link>https://minfengzhu.github.io/publication-type/2/</link>
     </image>
+    
+    <item>
+      <title>Exemplar-based Layout Fine-tuning for Node-link Diagrams</title>
+      <link>https://minfengzhu.github.io/publication/examplerlayout/</link>
+      <pubDate>Sun, 07 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://minfengzhu.github.io/publication/examplerlayout/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DRGraph: An Efficient Graph Layout Algorithm for Large-scale Graphs by Dimensionality Reduction</title>
+      <link>https://minfengzhu.github.io/publication/drgraph/</link>
+      <pubDate>Tue, 02 Feb 2021 15:46:02 +0800</pubDate>
+      <guid>https://minfengzhu.github.io/publication/drgraph/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Natural-language-based Visual Query Approach of Uncertain Human Trajectories</title>
+      <link>https://minfengzhu.github.io/publication/nl/</link>
+      <pubDate>Mon, 02 Nov 2020 15:46:02 +0800</pubDate>
+      <guid>https://minfengzhu.github.io/publication/nl/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>location2vec: a situation-aware representation for visual exploration of urban locations</title>

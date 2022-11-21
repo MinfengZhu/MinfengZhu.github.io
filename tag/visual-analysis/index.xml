@@ -5,12 +5,20 @@
     <link>https://minfengzhu.github.io/tag/visual-analysis/</link>
       <atom:link href="https://minfengzhu.github.io/tag/visual-analysis/index.xml" rel="self" type="application/rss+xml" />
     <description>Visual Analysis</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 02 Nov 2018 15:46:02 +0800</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 02 Nov 2020 15:46:02 +0800</lastBuildDate>
     <image>
       <url>https://minfengzhu.github.io/media/icon_hubcc6da888a29c8354be6ce60e7e29f30_403445_512x512_fill_lanczos_center_3.png</url>
       <title>Visual Analysis</title>
       <link>https://minfengzhu.github.io/tag/visual-analysis/</link>
     </image>
+    
+    <item>
+      <title>A Natural-language-based Visual Query Approach of Uncertain Human Trajectories</title>
+      <link>https://minfengzhu.github.io/publication/nl/</link>
+      <pubDate>Mon, 02 Nov 2020 15:46:02 +0800</pubDate>
+      <guid>https://minfengzhu.github.io/publication/nl/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>VAUD: A visual analysis approach for exploring spatio-temporal urban data</title>
