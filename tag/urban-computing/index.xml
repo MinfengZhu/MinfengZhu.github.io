@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>urban computing | Minfeng Zhu</title>
+    <link>https://minfengzhu.github.io/tag/urban-computing/</link>
+      <atom:link href="https://minfengzhu.github.io/tag/urban-computing/index.xml" rel="self" type="application/rss+xml" />
+    <description>urban computing</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 11 Mar 2019 17:20:04 +0800</lastBuildDate>
+    <image>
+      <url>https://minfengzhu.github.io/media/icon_hubcc6da888a29c8354be6ce60e7e29f30_403445_512x512_fill_lanczos_center_3.png</url>
+      <title>urban computing</title>
+      <link>https://minfengzhu.github.io/tag/urban-computing/</link>
+    </image>
+    
+    <item>
+      <title>location2vec: a situation-aware representation for visual exploration of urban locations</title>
+      <link>https://minfengzhu.github.io/publication/location2vec/</link>
+      <pubDate>Mon, 11 Mar 2019 17:20:04 +0800</pubDate>
+      <guid>https://minfengzhu.github.io/publication/location2vec/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

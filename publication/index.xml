@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications | Minfeng Zhu</title>
+    <link>https://minfengzhu.github.io/publication/</link>
+      <atom:link href="https://minfengzhu.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
+    <description>Publications</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 02 Apr 2020 15:46:02 +0800</lastBuildDate>
+    <image>
+      <url>https://minfengzhu.github.io/media/icon_hubcc6da888a29c8354be6ce60e7e29f30_403445_512x512_fill_lanczos_center_3.png</url>
+      <title>Publications</title>
+      <link>https://minfengzhu.github.io/publication/</link>
+    </image>
+    
+    <item>
+      <title>EEMEFN: Low-Light Image Enhancement via Edge-Enhanced Multi-Exposure Fusion Network</title>
+      <link>https://minfengzhu.github.io/publication/eemefn/</link>
+      <pubDate>Thu, 02 Apr 2020 15:46:02 +0800</pubDate>
+      <guid>https://minfengzhu.github.io/publication/eemefn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DM-GAN: Dynamic Memory Generative Adversarial Networks for Text-to-Image Synthesis</title>
+      <link>https://minfengzhu.github.io/publication/dm-gan/</link>
+      <pubDate>Tue, 02 Apr 2019 15:46:02 +0800</pubDate>
+      <guid>https://minfengzhu.github.io/publication/dm-gan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>location2vec: a situation-aware representation for visual exploration of urban locations</title>
+      <link>https://minfengzhu.github.io/publication/location2vec/</link>
+      <pubDate>Mon, 11 Mar 2019 17:20:04 +0800</pubDate>
+      <guid>https://minfengzhu.github.io/publication/location2vec/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VAUD: A visual analysis approach for exploring spatio-temporal urban data</title>
+      <link>https://minfengzhu.github.io/publication/vaud/</link>
+      <pubDate>Fri, 02 Nov 2018 15:46:02 +0800</pubDate>
+      <guid>https://minfengzhu.github.io/publication/vaud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Structuring Mobility Transition With an Adaptive Graph Representation</title>
+      <link>https://minfengzhu.github.io/publication/amtg/</link>
+      <pubDate>Thu, 02 Aug 2018 15:46:02 +0800</pubDate>
+      <guid>https://minfengzhu.github.io/publication/amtg/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
