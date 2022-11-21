@@ -1,378 +1,657 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<!-- This site was created with Wowchemy. https://www.wowchemy.com -->
+<!-- Last Published: November 21, 2022 --><html lang="en-us" >
+
 
 <head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.4.0">
-
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.7.0 for Hugo" />
   
 
   
   
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.16f785cdb553c8c4431db6775122af35.css" media="print" onload="this.media='all'">
+
   
   
   
     
     
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css" integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg==" crossorigin="anonymous" media="print" onload="this.media='all'">
     
-  
-  
 
-  <meta name="author" content="Nelson Bighetti">
-
-  
-  
-  
     
-  
-  <meta name="description" content="This work focuses on the extremely low-light image enhancement, which aims to improve image brightness and reveal hidden information in darken areas. Recently, image enhancement approaches have yielded impressive progress. However, existing methods still suffer from three main problems: (1) low-light images usually are high-contrast. Existing methods may fail to recover images details in extremely dark or bright areas; (2) current methods cannot precisely correct the color of low-light images; (3) when the object edges are unclear, the pixel-wise loss may treat pixels of different objects equally and produce blurry images. In this paper, we propose a two-stage method called Edge-Enhanced Multi-Exposure Fusion Network (EEMEFN) to enhance extremely low-light images. In the first stage, we employ a multi-exposure fusion module to address the high contrast and color bias issues. We synthesize a set of images with different exposure time from a single image and construct an accurate normal-light image by combining well-exposed areas under different illumination conditions. Thus, it can produce realistic initial images with correct color from extremely noisy and low-light images. Secondly, we introduce an edge enhancement module to refine the initial images with the help of the edge information. Therefore, our method can reconstruct high-quality images with sharp edges when minimizing the pixel-wise loss. Experiments on the See-in-the-Dark dataset indicate that our EEMEFN approach achieves state-of-the-art performance.">
-
-  
-  <link rel="alternate" hreflang="en-us" href="https://MinfengZhu.github.io/publication/eemefn/">
-
-  
-
-
-  
-
-  
-  
-  
-  <meta name="theme-color" content="#2962ff">
-  
-
-  
-  
-  
-  
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
-
     
     
     
       
+      
     
     
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
       
       
         
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
-        
+      
+
       
     
-
-    
-
-    
-
-  
-
-  
-  
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono&display=swap">
-  
-
-  
-  
-  
-  <link rel="stylesheet" href="/css/academic.min.dd629241ea9333c62c071f4a25f829ff.css">
-
-  
-
-  
-  
-    <script>
-      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-      ga('create', 'UA-145053709-1', 'auto');
       
-      ga('require', 'eventTracker');
-      ga('require', 'outboundLinkTracker');
-      ga('require', 'urlChangeTracker');
-      ga('send', 'pageview');
-    </script>
-    <script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+
+      
+      
+
+      
     
-    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+      
+      
+
+      
+      
+
+      
     
   
-  
-
-  
-
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/img/icon-32.png">
-  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
-
-  <link rel="canonical" href="https://MinfengZhu.github.io/publication/eemefn/">
 
   
   
   
   
-    
-    
   
   
-  <meta property="twitter:card" content="summary">
+  <link rel="stylesheet" href="/css/wowchemy.e5d7adca760216d3b7e28ea434e81f6f.css" />
+
   
-  <meta property="og:site_name" content="Minfeng Zhu">
-  <meta property="og:url" content="https://MinfengZhu.github.io/publication/eemefn/">
-  <meta property="og:title" content="EEMEFN: Low-Light Image Enhancement via Edge-Enhanced Multi-Exposure Fusion Network | Minfeng Zhu">
-  <meta property="og:description" content="This work focuses on the extremely low-light image enhancement, which aims to improve image brightness and reveal hidden information in darken areas. Recently, image enhancement approaches have yielded impressive progress. However, existing methods still suffer from three main problems: (1) low-light images usually are high-contrast. Existing methods may fail to recover images details in extremely dark or bright areas; (2) current methods cannot precisely correct the color of low-light images; (3) when the object edges are unclear, the pixel-wise loss may treat pixels of different objects equally and produce blurry images. In this paper, we propose a two-stage method called Edge-Enhanced Multi-Exposure Fusion Network (EEMEFN) to enhance extremely low-light images. In the first stage, we employ a multi-exposure fusion module to address the high contrast and color bias issues. We synthesize a set of images with different exposure time from a single image and construct an accurate normal-light image by combining well-exposed areas under different illumination conditions. Thus, it can produce realistic initial images with correct color from extremely noisy and low-light images. Secondly, we introduce an edge enhancement module to refine the initial images with the help of the edge information. Therefore, our method can reconstruct high-quality images with sharp edges when minimizing the pixel-wise loss. Experiments on the See-in-the-Dark dataset indicate that our EEMEFN approach achieves state-of-the-art performance."><meta property="og:image" content="https://MinfengZhu.github.io/img/icon-192.png">
-  <meta property="twitter:image" content="https://MinfengZhu.github.io/img/icon-192.png"><meta property="og:locale" content="en-us">
+  
+  
+  
+  
+  
   
     
-      <meta property="article:published_time" content="2020-04-02T15:46:02&#43;08:00">
     
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="Minfeng Zhu 朱闽峰" />
+
+
+
+
+
+  
+
+<meta name="description" content="This work focuses on the extremely low-light image enhancement, which aims to improve image brightness and reveal hidden information in darken areas. Recently, image enhancement approaches have yielded impressive progress. However, existing methods still suffer from three main problems: (1) low-light images usually are high-contrast. Existing methods may fail to recover images details in extremely dark or bright areas; (2) current methods cannot precisely correct the color of low-light images; (3) when the object edges are unclear, the pixel-wise loss may treat pixels of different objects equally and produce blurry images. In this paper, we propose a two-stage method called Edge-Enhanced Multi-Exposure Fusion Network (EEMEFN) to enhance extremely low-light images. In the first stage, we employ a multi-exposure fusion module to address the high contrast and color bias issues. We synthesize a set of images with different exposure time from a single image and construct an accurate normal-light image by combining well-exposed areas under different illumination conditions. Thus, it can produce realistic initial images with correct color from extremely noisy and low-light images. Secondly, we introduce an edge enhancement module to refine the initial images with the help of the edge information. Therefore, our method can reconstruct high-quality images with sharp edges when minimizing the pixel-wise loss. Experiments on the See-in-the-Dark dataset indicate that our EEMEFN approach achieves state-of-the-art performance." />
+
+
+
+<link rel="alternate" hreflang="en-us" href="https://minfengzhu.github.io/publication/eemefn/" />
+<link rel="canonical" href="https://minfengzhu.github.io/publication/eemefn/" />
+
+
+
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_hubcc6da888a29c8354be6ce60e7e29f30_403445_32x32_fill_lanczos_center_3.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_hubcc6da888a29c8354be6ce60e7e29f30_403445_180x180_fill_lanczos_center_3.png" />
+
+<meta name="theme-color" content="#1565c0" />
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary" />
+
+  <meta property="twitter:site" content="@wowchemy" />
+  <meta property="twitter:creator" content="@wowchemy" />
+<meta property="twitter:image" content="https://minfengzhu.github.io/media/icon_hubcc6da888a29c8354be6ce60e7e29f30_403445_512x512_fill_lanczos_center_3.png" />
+<meta property="og:site_name" content="Minfeng Zhu" />
+<meta property="og:url" content="https://minfengzhu.github.io/publication/eemefn/" />
+<meta property="og:title" content="EEMEFN: Low-Light Image Enhancement via Edge-Enhanced Multi-Exposure Fusion Network | Minfeng Zhu" />
+<meta property="og:description" content="This work focuses on the extremely low-light image enhancement, which aims to improve image brightness and reveal hidden information in darken areas. Recently, image enhancement approaches have yielded impressive progress. However, existing methods still suffer from three main problems: (1) low-light images usually are high-contrast. Existing methods may fail to recover images details in extremely dark or bright areas; (2) current methods cannot precisely correct the color of low-light images; (3) when the object edges are unclear, the pixel-wise loss may treat pixels of different objects equally and produce blurry images. In this paper, we propose a two-stage method called Edge-Enhanced Multi-Exposure Fusion Network (EEMEFN) to enhance extremely low-light images. In the first stage, we employ a multi-exposure fusion module to address the high contrast and color bias issues. We synthesize a set of images with different exposure time from a single image and construct an accurate normal-light image by combining well-exposed areas under different illumination conditions. Thus, it can produce realistic initial images with correct color from extremely noisy and low-light images. Secondly, we introduce an edge enhancement module to refine the initial images with the help of the edge information. Therefore, our method can reconstruct high-quality images with sharp edges when minimizing the pixel-wise loss. Experiments on the See-in-the-Dark dataset indicate that our EEMEFN approach achieves state-of-the-art performance." /><meta property="og:image" content="https://minfengzhu.github.io/media/icon_hubcc6da888a29c8354be6ce60e7e29f30_403445_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+
+  
+    <meta
+      property="article:published_time"
+      content="2020-04-02T15:46:02&#43;08:00"
+    />
+  
+  
     <meta property="article:modified_time" content="2020-04-02T15:46:02&#43;08:00">
   
 
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://minfengzhu.github.io/publication/eemefn/"
+  },
+  "headline": "EEMEFN: Low-Light Image Enhancement via Edge-Enhanced Multi-Exposure Fusion Network",
+  
+  "datePublished": "2020-04-02T15:46:02+08:00",
+  "dateModified": "2020-04-02T15:46:02+08:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Minfeng Zhu"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Minfeng Zhu",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://minfengzhu.github.io/media/icon_hubcc6da888a29c8354be6ce60e7e29f30_403445_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "This work focuses on the extremely low-light image enhancement, which aims to improve image brightness and reveal hidden information in darken areas. Recently, image enhancement approaches have yielded impressive progress. However, existing methods still suffer from three main problems: (1) low-light images usually are high-contrast. Existing methods may fail to recover images details in extremely dark or bright areas; (2) current methods cannot precisely correct the color of low-light images; (3) when the object edges are unclear, the pixel-wise loss may treat pixels of different objects equally and produce blurry images. In this paper, we propose a two-stage method called Edge-Enhanced Multi-Exposure Fusion Network (EEMEFN) to enhance extremely low-light images. In the first stage, we employ a multi-exposure fusion module to address the high contrast and color bias issues. We synthesize a set of images with different exposure time from a single image and construct an accurate normal-light image by combining well-exposed areas under different illumination conditions. Thus, it can produce realistic initial images with correct color from extremely noisy and low-light images. Secondly, we introduce an edge enhancement module to refine the initial images with the help of the edge information. Therefore, our method can reconstruct high-quality images with sharp edges when minimizing the pixel-wise loss. Experiments on the See-in-the-Dark dataset indicate that our EEMEFN approach achieves state-of-the-art performance."
+}
+</script>
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
   
 
 
   
-
-
-
-
-
   <title>EEMEFN: Low-Light Image Enhancement via Edge-Enhanced Multi-Exposure Fusion Network | Minfeng Zhu</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
 
 </head>
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
 
-  <aside class="search-results" id="search">
-  <div class="container">
-    <section class="search-header">
-
-      <div class="row no-gutters justify-content-between mb-3">
-        <div class="col-6">
-          <h1>Search</h1>
-        </div>
-        <div class="col-6 col-search-close">
-          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
-        </div>
-      </div>
-
-      <div id="search-box">
-        
-        
-        
-      </div>
-
-    </section>
-    <section class="section-search-results">
-
-      <div id="search-hits">
-        
-      </div>
-
-    </section>
-  </div>
-</aside>
-
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="085a1a8b4fcc9c17df6936522de234f7" >
 
   
-<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0 compensate-for-scrollbar" id="navbar-main">
-  <div class="container">
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.ec9d49ca50e4b80bdb08f0417a28ed84.js"></script>
 
+  
+
+
+
+
+  <div class="page-header header--fixed">
     
-      <a class="navbar-brand" href="/">Minfeng Zhu</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">Minfeng Zhu</a>
+      </div>
+      
+
       
       <button type="button" class="navbar-toggler" data-toggle="collapse"
-              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span><i class="fas fa-bars"></i></span>
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
       </button>
       
 
-    
-    <div class="collapse navbar-collapse" id="navbar">
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">Minfeng Zhu</a>
+      </div>
+      
 
       
       
-      <ul class="navbar-nav mr-auto">
-        
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
 
         
-
-        
-        
-        
+        <ul class="navbar-nav d-md-inline-flex">
           
-        
 
-        
-        
-        
-        
-        
-        
+          
+
           
           
           
             
           
+
           
-        
 
-        <li class="nav-item">
-          <a class="nav-link " href="/#about"><span>Home</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
           
-        
+          
+          
+          
 
-        
-        
-        
-        
-        
-        
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
           
           
           
             
           
+
           
-        
 
-        <li class="nav-item">
-          <a class="nav-link " href="/#posts"><span>Posts</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
           
-        
+          
+          
+          
 
-        
-        
-        
-        
-        
-        
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#publications"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
           
           
           
             
           
+
           
-        
 
-        <li class="nav-item">
-          <a class="nav-link " href="/#projects"><span>Projects</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
           
           
+          
+          
+
           
             
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#featured"><span>Publications</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-          
-          
-          
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
             
           
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
           
         
 
-        <li class="nav-item">
-          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        
+        
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
         </li>
-
-        
-        
-
-      
-      </ul>
-      <ul class="navbar-nav ml-auto">
-      
-
         
 
         
-
-        
-
-        
-        <li class="nav-item">
-          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
-        </li>
         
 
       </ul>
 
     </div>
+  </nav>
+</header>
+
+
   </div>
-</nav>
+
+  <div class="page-body">
+    
+    
+    
+
+    
 
 
-  <div class="pub" itemscope itemtype="http://schema.org/CreativeWork">
+
+
+
+
+
+
+<div class="pub">
 
   
+
 
 
 
@@ -391,17 +670,13 @@
   
   
 <div class="article-container pt-3">
-  <h1 itemprop="name">EEMEFN: Low-Light Image Enhancement via Edge-Enhanced Multi-Exposure Fusion Network</h1>
+  <h1>EEMEFN: Low-Light Image Enhancement via Edge-Enhanced Multi-Exposure Fusion Network</h1>
 
   
 
   
     
 
-
-
-<meta content="2020-04-02 15:46:02 &#43;0800 CST" itemprop="datePublished">
-<meta content="2020-04-02 15:46:02 &#43;0800 CST" itemprop="dateModified">
 
 <div class="article-metadata">
 
@@ -412,10 +687,10 @@
   <div>
     
 
-
-
-  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/minfeng-zhu/">Minfeng Zhu</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/pingbo-pan/">Pingbo Pan</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/wei-chen/">Wei Chen</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/and-yi-yang./">and Yi Yang.</a></span>
-
+  <span >
+      Minfeng Zhu</span>, <span >
+      Pingbo Pan</span>, <span >
+      Wei Chen</span>
   </div>
   
   
@@ -426,7 +701,7 @@
     
       
     
-    <time>April 2020</time>
+    April, 2020
   </span>
   
 
@@ -437,114 +712,15 @@
   
   
   
-
-  
   
 
   
-    
-<div class="share-box" aria-hidden="true">
-  <ul class="share">
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="https://twitter.com/intent/tweet?url=https://MinfengZhu.github.io/publication/eemefn/&amp;text=EEMEFN:%20Low-Light%20Image%20Enhancement%20via%20Edge-Enhanced%20Multi-Exposure%20Fusion%20Network" target="_blank" rel="noopener" class="share-btn-twitter">
-          <i class="fab fa-twitter"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://MinfengZhu.github.io/publication/eemefn/&amp;t=EEMEFN:%20Low-Light%20Image%20Enhancement%20via%20Edge-Enhanced%20Multi-Exposure%20Fusion%20Network" target="_blank" rel="noopener" class="share-btn-facebook">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="mailto:?subject=EEMEFN:%20Low-Light%20Image%20Enhancement%20via%20Edge-Enhanced%20Multi-Exposure%20Fusion%20Network&amp;body=https://MinfengZhu.github.io/publication/eemefn/" target="_blank" rel="noopener" class="share-btn-email">
-          <i class="fas fa-envelope"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://MinfengZhu.github.io/publication/eemefn/&amp;title=EEMEFN:%20Low-Light%20Image%20Enhancement%20via%20Edge-Enhanced%20Multi-Exposure%20Fusion%20Network" target="_blank" rel="noopener" class="share-btn-linkedin">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="https://web.whatsapp.com/send?text=EEMEFN:%20Low-Light%20Image%20Enhancement%20via%20Edge-Enhanced%20Multi-Exposure%20Fusion%20Network%20https://MinfengZhu.github.io/publication/eemefn/" target="_blank" rel="noopener" class="share-btn-whatsapp">
-          <i class="fab fa-whatsapp"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://MinfengZhu.github.io/publication/eemefn/&amp;title=EEMEFN:%20Low-Light%20Image%20Enhancement%20via%20Edge-Enhanced%20Multi-Exposure%20Fusion%20Network" target="_blank" rel="noopener" class="share-btn-weibo">
-          <i class="fab fa-weibo"></i>
-        </a>
-      </li>
-    
-  </ul>
-</div>
-
-
   
 
 </div>
 
     
 
-
-
-
-
-
-
-
-
-
-
-  
 
 
 
@@ -565,16 +741,16 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1" href="https://www.aaai.org/Papers/AAAI/2020GB/AAAI-ZhuM.2559.pdf" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header" href="https://www.aaai.org/Papers/AAAI/2020GB/AAAI-ZhuM.2559.pdf" target="_blank" rel="noopener">
   PDF
 </a>
 
 
 
-<button type="button" class="btn btn-outline-primary my-1 mr-1 js-cite-modal"
+<a href="#" class="btn btn-outline-primary btn-page-header js-cite-modal"
         data-filename="/publication/eemefn/cite.bib">
   Cite
-</button>
+</a>
 
 
 
@@ -602,9 +778,10 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract" itemprop="text">This work focuses on the extremely low-light image enhancement, which aims to improve image brightness and reveal hidden information in darken areas. Recently, image enhancement approaches have yielded impressive progress. However, existing methods still suffer from three main problems: (1) low-light images usually are high-contrast. Existing methods may fail to recover images details in extremely dark or bright areas; (2) current methods cannot precisely correct the color of low-light images; (3) when the object edges are unclear, the pixel-wise loss may treat pixels of different objects equally and produce blurry images. In this paper, we propose a two-stage method called Edge-Enhanced Multi-Exposure Fusion Network (EEMEFN) to enhance extremely low-light images. In the first stage, we employ a multi-exposure fusion module to address the high contrast and color bias issues. We synthesize a set of images with different exposure time from a single image and construct an accurate normal-light image by combining well-exposed areas under different illumination conditions. Thus, it can produce realistic initial images with correct color from extremely noisy and low-light images. Secondly, we introduce an edge enhancement module to refine the initial images with the help of the edge information. Therefore, our method can reconstruct high-quality images with sharp edges when minimizing the pixel-wise loss. Experiments on the See-in-the-Dark dataset indicate that our EEMEFN approach achieves state-of-the-art performance.</p>
+    <p class="pub-abstract">This work focuses on the extremely low-light image enhancement, which aims to improve image brightness and reveal hidden information in darken areas. Recently, image enhancement approaches have yielded impressive progress. However, existing methods still suffer from three main problems: (1) low-light images usually are high-contrast. Existing methods may fail to recover images details in extremely dark or bright areas; (2) current methods cannot precisely correct the color of low-light images; (3) when the object edges are unclear, the pixel-wise loss may treat pixels of different objects equally and produce blurry images. In this paper, we propose a two-stage method called Edge-Enhanced Multi-Exposure Fusion Network (EEMEFN) to enhance extremely low-light images. In the first stage, we employ a multi-exposure fusion module to address the high contrast and color bias issues. We synthesize a set of images with different exposure time from a single image and construct an accurate normal-light image by combining well-exposed areas under different illumination conditions. Thus, it can produce realistic initial images with correct color from extremely noisy and low-light images. Secondly, we introduce an edge enhancement module to refine the initial images with the help of the edge information. Therefore, our method can reconstruct high-quality images with sharp edges when minimizing the pixel-wise loss. Experiments on the See-in-the-Dark dataset indicate that our EEMEFN approach achieves state-of-the-art performance.</p>
     
 
+    
     
     <div class="row">
       <div class="col-md-1"></div>
@@ -612,12 +789,9 @@
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Type</div>
           <div class="col-12 col-md-9">
-            
-            
             <a href="/publication/#1">
               Conference paper
             </a>
-            
           </div>
         </div>
       </div>
@@ -646,126 +820,132 @@
 
     
 
+
+
+
+
 <div class="article-tags">
   
-  <a class="badge badge-light" href="/tags/low-light-image-enhancement/">Low-light Image Enhancement</a>
+  <a class="badge badge-light" href="/tag/low-light-image-enhancement/">Low-light Image Enhancement</a>
   
 </div>
 
 
+
+<div class="share-box">
+  <ul class="share">
     
-
-
-
-
-
-
-
-
-  
-  
-    
-  
-  
-
-
-
-
-
-  
-  
-  
-  
-  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
-    
-
-    <div class="media-body">
-      <h5 class="card-title" itemprop="name"><a href="/authors/minfeng-zhu/"></a></h5>
       
       
-      <ul class="network-icon" aria-hidden="true">
+      
         
-      </ul>
-    </div>
-  </div>
-
-
-
-
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fminfengzhu.github.io%2Fpublication%2Feemefn%2F&amp;text=EEMEFN%3A&#43;Low-Light&#43;Image&#43;Enhancement&#43;via&#43;Edge-Enhanced&#43;Multi-Exposure&#43;Fusion&#43;Network" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
     
-
-
-  </div>
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fminfengzhu.github.io%2Fpublication%2Feemefn%2F&amp;t=EEMEFN%3A&#43;Low-Light&#43;Image&#43;Enhancement&#43;via&#43;Edge-Enhanced&#43;Multi-Exposure&#43;Fusion&#43;Network" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a href="mailto:?subject=EEMEFN%3A%20Low-Light%20Image%20Enhancement%20via%20Edge-Enhanced%20Multi-Exposure%20Fusion%20Network&amp;body=https%3A%2F%2Fminfengzhu.github.io%2Fpublication%2Feemefn%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fminfengzhu.github.io%2Fpublication%2Feemefn%2F&amp;title=EEMEFN%3A&#43;Low-Light&#43;Image&#43;Enhancement&#43;via&#43;Edge-Enhanced&#43;Multi-Exposure&#43;Fusion&#43;Network" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=EEMEFN%3A&#43;Low-Light&#43;Image&#43;Enhancement&#43;via&#43;Edge-Enhanced&#43;Multi-Exposure&#43;Fusion&#43;Network%20https%3A%2F%2Fminfengzhu.github.io%2Fpublication%2Feemefn%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fminfengzhu.github.io%2Fpublication%2Feemefn%2F&amp;title=EEMEFN%3A&#43;Low-Light&#43;Image&#43;Enhancement&#43;via&#43;Edge-Enhanced&#43;Multi-Exposure&#43;Fusion&#43;Network" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
 </div>
 
 
 
-      
 
-    
-    
 
-    
-    
-    
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
-
-      
-
-      
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/r.min.js"></script>
-        
-      
-
-      
-      
-    
-
-    
-    
-
-    
-    
-    <script>hljs.initHighlightingOnLoad();</script>
-    
-
-    
-
-    
-    
-
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <script src="/js/academic.min.dc856155b640fa1cd8bd8b7b068fe79c.js"></script>
-
-    
 
 
 
@@ -773,31 +953,173 @@
 
 
   
-  <div class="container">
-    <footer class="site-footer">
   
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</div>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
 
   <p class="powered-by">
     
-
-    Powered by the
-    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
-    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
-
     
-    <span class="float-right" aria-hidden="true">
-      <a href="#" id="back_to_top">
-        <span class="button_icon">
-          <i class="fas fa-chevron-up fa-2x"></i>
-        </span>
-      </a>
-    </span>
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
     
   </p>
 </footer>
 
+    </div>
+    
   </div>
+
   
+
+
+<script src="/js/vendor-bundle.min.d26509351aa0ff874abbee824e982e9b.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+
+  <script src="/js/wowchemy-headroom.db4755770454eb63685f8de785c0a172.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+<script src="/en/js/wowchemy.min.e973d49cb2d568aa6f8eaf3638337473.js"></script>
+
+
+
+
+
+
 
   
 <div id="modal" class="modal fade" role="dialog">
@@ -810,7 +1132,8 @@
         </button>
       </div>
       <div class="modal-body">
-        <pre><code class="tex hljs"></code></pre>
+        
+        <pre><code></code></pre>
       </div>
       <div class="modal-footer">
         <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
@@ -824,6 +1147,26 @@
     </div>
   </div>
 </div>
+
+
+  <script src="/js/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
 </html>
